@@ -8,7 +8,7 @@ public class gerador {
   static String geradorMne (String texto){
     String senha = "";
 
-    List<String> lista = Arrays.asList(texto.split(texto));
+    List<String> lista = List.of(texto.split(" "));
 
     for (String i: lista) {
       senha += i.charAt(0);
